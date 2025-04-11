@@ -1,6 +1,33 @@
 @charset "UTF-8";
 
-body {
-    display: block;
+body{
+    background-color: darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+main {
+   background-color: rgba(255, 255, 255, 0.445);
+   width: 350px;
+   height: 500px;
+   border-radius: 7px;
 }
 
+.imagem-fundo {
+    background: url(imagens/fundo.jpg);
+    background-position: right center;
+    background-size: cover;
+    display: flex;
+    justify-content: left;
+    border: 1px solid darkblue;
+    border-radius: 7px 7px 0px 0px;
+}
+
+
+.imgdois {
+    height: 130px;
+    margin-left: 30px;
+}
