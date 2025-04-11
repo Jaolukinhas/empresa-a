@@ -145,3 +145,18 @@ main {
   color: var(--azul-escuro);
   font-size: 14px;
 }
+
+/* RESPONSIVO */
+@media (max-width: 400px) {
+    .logotn {
+      height: 100px;
+    }
+  
+    .entrar {
+      font-size: 13px;
+    }
+  
+    .esqueci {
+      font-size: 13px;
+    }
+  }
