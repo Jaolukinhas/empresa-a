@@ -1,25 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Clone TexNet | JL</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clone TexNet | JL</title>
+  <!--Link para o arquivo de script.js-->
+  <script src="script.js"></script>
+
+  <!-- Link para o arquivo de estilos CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Ícone que aparece na aba do navegador -->
+  <link rel="shortcut icon" href="imagens/logo.jpg" type="image/x-icon"/>
 </head>
+
 <body>
-    <main>
-        <div class="imagem-fundo">
-            <img src="imagens/logo.jpg" class="imgdois">
-            <div class="logo">
-                
-            </div>
+  <main>
+    <!-- Área com a logo e imagem de fundo -->
+    <div class="imagens">
+      <img src="imagens/logo.jpg" alt="logo" class="logotn" />
+    </div>
+
+    <!-- Área com os campos do formulário -->
+    <div class="formularios">
+
+      <!-- Campo de CPF -->
+      <div class="input-container">
+        <div class="input-wrapper">
+          <input 
+            type="text" 
+            inputmode="numeric" 
+            maxlength="14" 
+            class="caixas" 
+            placeholder="CPF"
+          />
+          <span class="linha"></span>
         </div>
-        <div class="cadastro">
-            <form action="cadastro.js" method="post">
-                <input type="number" name="email" id="iemail" placeholder="CPF" class="caixas">
-                <input type="password" name="senha" id="isenha" placeholder="Senha" class="caixas">
-            </form>
+      </div>
+
+      <!-- Campo de senha -->
+      <div class="input-container">
+        <div class="input-wrapper">
+          <input 
+            type="password" 
+            class="caixas" 
+            placeholder="Senha" 
+            minlength="8"
+          />
+          <span class="linha"></span>
         </div>
-    </main>
+      </div>
+
+      <!-- Botões e checkbox -->
+      <div class="botoes">
+        <div class="cb">
+          <input type="checkbox" name="checkbox" id="icheckbox"/>
+          <label for="icheckbox">Mantenha-me conectado</label>
+        </div>
+        <br />
+        <div>
+          <input type="button" value="ENTRAR" class="entrar" />
+        </div>
+        <a href="#" class="esqueci">Esqueci minha senha</a>
+      </div>
+    </div>
+  </main>
+
+<!--Link para o arquivo de script.js-->
+<script src="script.js"></script>
+
 </body>
 </html>
