@@ -8,7 +8,7 @@ const CPF_CORRETO = "02986107362";
 const SENHA_CORRETA = "livialinda";
 
 //evento de clique no botão
-botaoEntrar.addEventlistener('click', () => {
+botaoEntrar.addEventListener('click', () => {
     const cpfDigitado = cpfInput.value.trim();
     const senhaDigitada = senhaInput.value.trim();
 
